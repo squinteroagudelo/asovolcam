@@ -1,0 +1,63 @@
+:root{
+    --primary-color: #ffc107;
+    --primary-opacity: #ffc1078a;
+}
+body{
+    min-height: 100vh;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    width: 50px;
+}
+
+#navIcon{
+    color: #0000001a;
+}
+
+#map{
+    height: 500px;
+}
+
+#mailUs p{
+    text-align: justify;
+}
+
+form .form-control:focus, form .form-check-input:focus, .btn:focus {
+    border-color: var(--primary-opacity);
+    box-shadow: 0 0 0 0.2rem rgba(255, 199, 7, .22);
+}
+
+.form-check-input {
+    border: 2px solid var(--primary-color);
+}
+
+.btn-ppal {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 30px;
+    text-align: center;
+}
+
+.btn-ppal:hover {
+    background-color: #0f6239cc;
+    color: #000000;
+}
+
+.btn-outline {
+    border: solid 2px var(--primary-color);
+    border-radius: 5px;
+    color: #444444;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 30px;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    color: #000000;
+    background: var(--primary-color);
+}
