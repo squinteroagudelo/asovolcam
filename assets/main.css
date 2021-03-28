@@ -1,25 +1,58 @@
-:root{
-    --primary-color: #ffc107;
-    --primary-opacity: #ffc1078a;
+:root {
+    --primary-color: #f7b100;
+    --primary-opacity: #f7b1008a;
+    --secondary-color: #848484;
+    --acent-color: #f9762f;
 }
-body{
+
+body {
     min-height: 100vh;
 }
 
-.navbar-toggler:focus{
+a {
+    color: #084298;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+#navbar {
+    background: var(--primary-color) !Important;
+}
+
+.navbar-nav .nav-link{
+    border-bottom: var(--secondary-color) solid;
+    border-bottom-width: 0;
+    transition: 0.1s ease-in-out;
+    width: fit-content;
+}
+
+.navbar-nav .active{
+    border-bottom: var(--acent-color) solid;
+    border-bottom-width: 3px;
+}
+
+.navbar-nav .nav-link:hover{
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.navbar-toggler:focus {
     box-shadow: none;
     width: 50px;
 }
 
-#navIcon{
+#navIcon {
     color: #0000001a;
 }
 
-#map{
+#map {
     height: 500px;
 }
 
-#mailUs p{
+#mailUs p {
     text-align: justify;
 }
 
@@ -32,10 +65,15 @@ form .form-control:focus, form .form-check-input:focus, .btn:focus {
     border: 2px solid var(--primary-color);
 }
 
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
 .btn-ppal {
     background-color: var(--primary-color);
     border-radius: 5px;
-    color: #444444;
+    color: var(--secondary-color);
     font-size: 16px;
     font-weight: 400;
     padding: 6px 30px;
@@ -50,7 +88,7 @@ form .form-control:focus, form .form-check-input:focus, .btn:focus {
 .btn-outline {
     border: solid 2px var(--primary-color);
     border-radius: 5px;
-    color: #444444;
+    color: var(--secondary-color);
     font-size: 16px;
     font-weight: 400;
     padding: 6px 30px;
@@ -60,4 +98,57 @@ form .form-control:focus, form .form-check-input:focus, .btn:focus {
 .btn-outline:hover {
     color: #000000;
     background: var(--primary-color);
+}
+
+footer {
+    background: var(--secondary-color) !Important;
+    color: #000000;
+}
+
+.footer-bar nav {
+    background: var(--primary-color);
+    box-shadow: 3px 3px 3px #424242;
+    color: #000000;
+}
+
+.nit:before {
+    content: '|';
+    margin-right: 8px;
+}
+
+footer h5 {
+    color: #ffffff;
+}
+
+.fa-facebook-f {
+    color: #03359e;
+}
+
+.fa-whatsapp {
+    color: #1bd03f;
+}
+
+.fa-facebook-f:hover {
+    color: var(--primary-color);
+}
+
+.fa-whatsapp:hover {
+    color: var(--primary-color);
+}
+
+/* Move page Top*/
+.goTop {
+    display: none;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: #f7b1009c !important;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.goTop:hover{
+    color: #f9762f9c !important;
 }
