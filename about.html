@@ -5,11 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Asovolcam - Nosotros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/main.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+            integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+            crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d111fb3239.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- Optional: include a polyfill for ES6 Promises for IE11 -->
@@ -22,18 +28,50 @@
         };
     </script>
     <script>
-        (function(){var w=window;var ic=w.callbell;if(typeof ic==="function"){ic('reattach_activator');ic('update',callbellSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Callbell=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://dash.callbell.eu/include/'+window.callbellSettings.token+'.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+        (function () {
+            var w = window;
+            var ic = w.callbell;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', callbellSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Callbell = i;
+                var l = function () {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://dash.callbell.eu/include/' + window.callbellSettings.token + '.js';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                };
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
     </script>
     <!-- End of Async Callbell Code -->
   </head>
   <body onload="aboutLoad()">
-  <header class="sticky-top">
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-warning fs-5" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html" style="width: 150px">
-            <img src="./assets/img/logo_asovolcamt_b.png" alt="brand" class="img-fluid">
+            <img src="./assets/img/logo_asovolcamt_b.svg" alt="brand" class="img-fluid">
           </a>
-          <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" id="navbarToggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
             <i class="fas fa-bars fs-1" id="navIcon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -58,88 +96,453 @@
       </nav>
       <section class="row">
         <article class="col">
+          <div class="bg-secondary py-3 rounded-3 text-white-50">
+            <h3 class="col m-0 text-center text-uppercase">Asociación de Volqueteros, Camioneros, Maquinaria y
+              Turbos</h3>
+            <h5 class="col m-0 text-center">ASOVOLCAMT</h5>
+            <div class="text-center"><small>NIT. 900.562.528-2</small></div>
+          </div>
+          <section class="mt-5">
+            <div class="mt-5">
+              <h4>MISIÓN</h4>
+              <p>
+                Somos una Asociación de servicio de transporte terrestre de carga y alquiler de maquinaria, destacada en
+                competitividad, cumplimiento y excelente calidad en nuestros servicios ofrecidos, logrando así la
+                satisfacción plena a nuestros clientes entorno a un fin común para el mejor desarrollo social, cultural
+                y económico de este importante sector, logrando así seguir siendo la primera y mejor opción en
+                prestación
+                de servicios basados en nuestros principios y valores.
+              </p>
+            </div>
+            <div class="mt-5">
+              <h4>VISIÓN</h4>
+              <p>
+                ASOVOLCAMT, para el año 2.022 se compromete en ser reconocida como una empresa líder de transporte
+                terrestre de carga y alquiler de maquinaria en el Magdalena Medio, ligada con nuestros clientes y
+                reconocida por trabajar bajo principios de responsabilidad social contribuyendo al liderazgo,
+                crecimiento y rentabilidad de sus actividades; con los mejores estándares de calidad en los procesos a
+                través de nuestros valores.
+              </p>
+            </div>
+          </section>
+          <section class="mt-5">
+            <div class="mt-5">
+              <h4>NUESTROS VALORES</h4>
+              <div class="accordion mt-3" id="accordionValues">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingRespect">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseRespect" aria-expanded="false" aria-controls="collapseRespect">
+                      Respeto
+                    </button>
+                  </h2>
+                  <div id="collapseRespect" class="accordion-collapse collapse" aria-labelledby="headingRespect"
+                       data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingHonesty">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseHonesty" aria-expanded="false" aria-controls="collapseHonesty">
+                      Honestidad
+                    </button>
+                  </h2>
+                  <div id="collapseHonesty" class="accordion-collapse collapse" aria-labelledby="headingHonesty"
+                       data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingResponsability">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseResponsability" aria-expanded="false"
+                            aria-controls="collapseResponsability">
+                      Responsabilidad
+                    </button>
+                  </h2>
+                  <div id="collapseResponsability" class="accordion-collapse collapse"
+                       aria-labelledby="headingResponsability" data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
 
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFraternity">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFraternity" aria-expanded="true"
+                            aria-controls="collapseFraternity">
+                      Fraternidad
+                    </button>
+                  </h2>
+                  <div id="collapseFraternity" class="accordion-collapse collapse" aria-labelledby="headingFraternity"
+                       data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOrderliness">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOrderliness" aria-expanded="false"
+                            aria-controls="collapseOrderliness">
+                      Orden
+                    </button>
+                  </h2>
+                  <div id="collapseOrderliness" class="accordion-collapse collapse" aria-labelledby="headingOrderliness"
+                       data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingQuality">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseQuality" aria-expanded="false" aria-controls="collapseQuality">
+                      Calidad
+                    </button>
+                  </h2>
+                  <div id="collapseQuality" class="accordion-collapse collapse" aria-labelledby="headingQuality"
+                       data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingEffectiveness">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEffectiveness" aria-expanded="true"
+                            aria-controls="collapseEffectiveness">
+                      Efectividad
+                    </button>
+                  </h2>
+                  <div id="collapseEffectiveness" class="accordion-collapse collapse"
+                       aria-labelledby="headingEffectiveness" data-bs-parent="#accordionValues">
+                    <div class="accordion-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </article>
       </section>
-    </main>
-  <footer class="mt-3 px-3">
-    <div class="px-sm-5 footer-bar">
-      <nav class="navbar pb-0 px-sm-2 mb-3 rounded-bottom">
-        <div class="flex-row mx-auto mx-sm-0">
-          <h6 class="mb-2 text-center">
-            <span class="d-block d-sm-inline-block fw-bold">Asociación de Volqueteros, Camioneros, Maquinaria y Turbos</span>
-            <span class="mx-2 nit">NIT. 900.562.528-2</span>
-          </h6>
-        </div>
-      </nav>
-    </div>
 
-    <div class="row px-md-4">
-      <div class="col-sm-4 col-md-4 mb-2 mb-sm-0">
-        <address>
-          <h5 class="text-dark">Nuestra Sede</h5>
-          <h6 class="text-body">Puerto Boyacá, Boyacá</h6>
-          <p class="mb-1"><i class="fas fa-map-marker-alt fa-fw mr-1"></i> Carrera 5a # 28 - 65</p>
-          <p class="mb-1"><i class="fas fa-map-marked-alt fa-fw mr-1"></i> Barrio La Paz</p>
-          <p class="mb-1"><i class="fas fa-phone fa-flip-horizontal fa-fw mr-1"></i> (8) 738 1390</p>
-          <p class="mb-1"><i class="fas fa-mobile-alt fa-fw mr-1"></i> (+57) 3113007707</p>
-        </address>
+      <section class="row">
+        <article class="col">
+          <section class="mt-5">
+            <div class="mt-5">
+              <h4>NUESTRAS POLÍTICAS</h4>
+              <div class="mt-5">
+                <ul class="nav nav-tabs" id="companyPolicy" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sstGoals-tab" data-bs-toggle="tab" data-bs-target="#sstGoals" type="button" role="tab" aria-controls="sstGoals" aria-selected="true">Objetivos Integrales SST</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sstPolicy-tab" data-bs-toggle="tab" data-bs-target="#sstPolicy" type="button" role="tab" aria-controls="sstPolicy" aria-selected="false">Seguridad y Salud en el Trabajo</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="policyPrevention-tab" data-bs-toggle="tab" data-bs-target="#policyPrevention" type="button" role="tab" aria-controls="policyPrevention" aria-selected="false">Tabaco, alcohol y drogas</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="policyRoadSafety-tab" data-bs-toggle="tab" data-bs-target="#policyRoadSafety" type="button" role="tab" aria-controls="policyRoadSafety" aria-selected="false">Seguridad Vial</button>
+                  </li>
+                </ul>
+                <div class="tab-content border" id="myTabContent">
+                  <div class="tab-pane fade show active my-4" id="sstGoals" role="tabpanel" aria-labelledby="sstGoals-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5>OBJETIVOS INTEGRALES SST</h5>
+                          <h6>(SALUD, SEGURIDAD, AMBIENTE Y CALIDAD)</h6>
+                        </div>
+                        <div class="col-12">
+                          <ol class="list-group list-group-numbered">
+                            <li class="list-group-item border-0">Mantener la satisfacción del cliente en Excelente.</li>
+                            <li class="list-group-item border-0">Mantener la accidentalidad laboral en cero.</li>
+                            <li class="list-group-item border-0">Mantener en cero los comparendos ambientales.</li>
+                            <li class="list-group-item border-0">Mantener en cero los comparendos viales.</li>
+                            <li class="list-group-item border-0">Mantener la operación optima de los vehículos de la empresa.</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade my-4" id="sstPolicy" role="tabpanel" aria-labelledby="sstPolicy-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-5 text-center">POLÍTICA DE SEGURIDAD Y SALUD EN EL TRABAJO</h5>
+                        </div>
+                        <div class="col-12">
+                          <p>
+                            <span class="fw-bold">ASOVOLCAMT</span> es una empresa dedicada a transporte de carga terrestre comprometida con el
+                            mejoramiento de las condiciones de trabajo, salud y seguridad de todos los niveles de la
+                            organización, trabajadores, contratistas y partes interesadas mediante la implementación y
+                            la mejora continua del Sistema De Gestión De Seguridad Y Salud En El Trabajo.
+                          </p>
+                          <p>
+                            Adicionalmente, la dirección se compromete de manera continua a:
+                          </p>
+                          <ul>
+                            <li>Identificar los peligros, valorar, evaluar los riesgos, e implementar los respectivos controles.</li>
+                            <li>Proteger la seguridad y salud de todos los trabajadores, mediante la mejora continua del sistema de gestión de seguridad y salud en el trabajo SG-SST.</li>
+                            <li>Cumplir con la normatividad nacional vigente aplicable en materia de riesgos laborales.</li>
+                            <li>Establecer una cultura de prevención de riesgos laborales en los trabajadores, contratistas, proveedores y todos aquellos que presten servicios a la empresa, garantizando condiciones de seguridad y salud en el trabajo.</li>
+                          </ul>
+                          <p>
+                            <span class="fw-bold">ASOVOLCAMT</span> proveerá los recursos necesarios para la implementación, seguimiento y
+                            mejoramiento continuo del SGSST, adicional se compromete a divulgar, actualizar y comunicar
+                            de forma permanente y periódica y a permanecer disponible para todo el personal de la
+                            organización y partes interesadas.
+                          </p>
+                        </div>
+                        <div class="col-12 fs-5 text-center">
+                          <a href="./assets/docs/PoliticaSST.pdf" target="blank">Ver documento: Política SST</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade my-4" id="policyPrevention" role="tabpanel" aria-labelledby="policyPrevention-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-5 text-center">POLÍTICA DE PREVENCIÓN DE CONSUMO DE TABACO, ALCOHOL Y DROGAS</h5>
+                        </div>
+                        <div class="col-12">
+                          <p>
+                            La empresa ha definido y establecido una política de no alcohol, tabaco y drogas, esto con
+                            el fin de promover, prevenir y fomentar el bienestar de los trabajadores, contratistas,
+                            usuarios y familias que visitan las instalaciones físicas de la empresa, ya que esto genera
+                            impactos negativos sobre la sociedad, el ambiente de trabajo y en las personas en su
+                            seguridad y condiciones de trabajo, debido a sus factores de riesgo asociado.
+                          </p>
+                          <p>
+                            Por lo tanto, con el ánimo en el mejoramiento del desempeño laboral y el fomento de los
+                            hábitos y estilos de vida saludable, teniendo en cuenta lo establecido en la resolución 1075
+                            de marzo 24 de 1992 y la resolución 4225 de mayo 29 de 1992, resolucion 2646 de 2008 Se
+                            establece los siguientes parametros:
+                          </p>
+                          <ul class="mb-2">
+                            <li>
+                              Prohíbe presentarse al cumplimiento de sus actividades, funciones y/o tareas bajo el
+                              efecto de sustancias psicoactivas incluidas bebidas alcohólicas o energizantes u otras que
+                              afecten el funcionamiento adecuado del desempeño laboral.
+                            </li>
+                            <li>
+                              Prohíbe el consumo de tabaco, sustancias psicoactivas, bebidas alcohólicas o
+                              energizantes, durante el desarrollo de actividades y/o funciones dentro de las
+                              instalaciones físicas de la empresa.
+                            </li>
+                            <li>
+                              Promueve actividades de sensibilización y de capacitación para los trabajadores,
+                              contratistas y temporales que buscan la creación de hábitos y estilos de vida saludables
+                              en relación al daño que causa el cigarrillo, bebidas alcoholicas y/o energizantes y
+                              sustancias psicoactivas que afectan la salud del individuo y su entorno.
+                            </li>
+                          </ul>
+                          <p>
+                            Los trabajadores deberán tener una conducta responsable y participativa en las acciones de
+                            sensibilización que promuevan el cumplimiento de esta política, el incumplimiento de esta
+                            política y de las reglas o normas que se deriven de ella, es condición de empleo y
+                            contratación de la empresa.
+                          </p>
+                        </div>
+                        <div class="col-12 fs-5 text-center">
+                          <a href="./assets/docs/PolíticaAlcoholTabacoySustancias.pdf" target="blank">Ver documento: Política de Prevención de consumo de tabaco alcohol y drogas.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade my-4" id="policyRoadSafety" role="tabpanel" aria-labelledby="policyRoadSafety-tab">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="mb-5 text-center">POLÍTICA DE SEGURIDAD VIAL</h5>
+                        </div>
+                        <div class="col-12">
+                          <p>
+                            <span class="fw-bold">ASOVOLCAMT</span> es una Empresa dedicada a preservar la vida humana y la continuidad de las
+                            operaciones.
+                            Ha establecido la siguiente política de seguridad vial; La cual es de obligatorio cumplimiento para
+                            conductores propios y terceros, quienes deben seguir los lineamientos relacionados a
+                            continuación:
+                          </p>
+                          <ul class="mb-2">
+                            <li>
+                              Se debe ser cortes y respetar a otros conductores y usuarios de la vía.
+                            </li>
+                            <li>
+                              Se deben respetar los límites de velocidad establecidos por las autoridades. El límite
+                              máximo de velocidad para vehículos vacíos es de 73 Km/h y Cargados de 60 Km/h; para zonas
+                              rurales es de 30 Km/h, áreas de operación dentro de locaciones o bases de nuestros
+                              clientes 10 Km/h a no ser que la señalización vertical establezca límites de velocidad
+                              inferiores.
+                            </li>
+                            <li>
+                              El conducir bajo influencia de sustancias alcohólicas o alucinógenas es una condición de
+                              riesgo máximo para el mismo operador, para las demás personas del entorno y para el
+                              medio ambiente, por lo tanto, es una situación NO permitida dentro de la compañía que
+                              amerita la sanción o despido justificado.
+                            </li>
+                            <li>
+                              El uso del cinturón y casco de seguridad debe hacerse en todo momento.
+                            </li>
+                            <li>
+                              El uso obligatorio de casco cerrado para la conducción del vehículo cuando se realice el
+                              movimiento fuera del municipio.
+                            </li>
+                            <li>
+                              El uso obligatorio de chaleco reflectivo para transportarse después de las 06:00 Pm.
+                            </li>
+                            <li>
+                              Todo conductor debe comportarse de forma que no obstaculice, perjudique o ponga en
+                              riesgo a los demás y debe conocer y cumplir con las regulaciones, normas de tránsito y
+                              transporte terrestre vigente, especificaciones técnicas y al Programa de Seguridad Vial de
+                              la compañía.
+                            </li>
+                            <li>
+                              Todo conductor debe portar con la documentación requerida por las autoridades de
+                              tránsito y la empresa.
+                            </li>
+                            <li>
+                              Está prohibido el ingreso de acompañantes de cabina a las locaciones del cliente.
+                            </li>
+                            <li>
+                              Es responsabilidad del conductor hacer uso adecuado de la unidad de transporte y
+                              todos sus componentes, el equipo de carretera, los elementos de seguridad personal y
+                              demás elementos proporcionados por la empresa. Así como velar por las condiciones de
+                              conservación necesarias de los mismos.
+                            </li>
+                            <li>
+                              Previo al viaje el conductor debe realizar inspección pre-operacional al vehículo para
+                              garantizar la operatividad del mismo.
+                            </li>
+                            <li>
+                              Cuando se tenga conocimiento de situaciones de orden público que se puedan estar
+                              presentando se informará vía telefónica a Control Trafico y Jefe inmediato quienes darán
+                              la instrucción del caso.
+                            </li>
+                            <li>
+                              Todo conductor está obligado a conocer y aplicar las técnicas de manejo defensivo.
+                            </li>
+                            <li>
+                              El uso de teléfonos celulares y el envío de mensajes se debe hacer únicamente cuando
+                              el vehículo se encuentre estacionado en un lugar seguro a un lado de la carretera, de
+                              modo que no represente una situación de riesgo que pueda causar un accidente.
+                            </li>
+                            <li>
+                              Todo conductor debe haber descansado y estar en condiciones físicas óptimas; antes de
+                              iniciar cualquier trayecto si siente fatiga durante la jornada de conducción debe detener
+                              la marcha en un sitio seguro y tomar un descanso de por lo menos 15 minutos cada
+                              cuatro horas.
+                            </li>
+                            <li>
+                              Los conductores deben asistir a las capacitaciones programadas por la empresa.
+                            </li>
+                            <li>
+                              Los conductores deben portar la dotación suministrada por la empresa.
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-12 fs-5 text-center">
+                          <a href="./assets/docs/PoliticaSeguridadVial.pdf" target="blank">Ver documento: Política de Seguridad Vial.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
+      </section>
+
+    </main>
+    <footer class="mt-3 px-3">
+      <div class="px-sm-5 footer-bar">
+        <nav class="navbar pb-0 px-sm-2 mb-3 rounded-bottom">
+          <div class="flex-row mx-auto mx-sm-0">
+            <h6 class="mb-2 text-center">
+              <span
+                  class="d-block d-sm-inline-block fw-bold">Asociación de Volqueteros, Camioneros, Maquinaria y Turbos</span>
+              <span class="mx-2 nit">NIT. 900.562.528-2</span>
+            </h6>
+          </div>
+        </nav>
       </div>
-      <div class="col-sm-4 mb-3 col-md-3 mb-sm-0">
-        <h5 class="text-dark">Políticas</h5>
-        <p class="mb-1">
-          <a href="https://drive.google.com/uc?export=view&id=1rL-nHuNYJqHZTVgaEv0s_BOEwsweeUEE" target="blank">Privacidad</a>
-        </p>
-        <p class="mb-1">
-          <a href="https://drive.google.com/uc?export=view&id=1rL-nHuNYJqHZTVgaEv0s_BOEwsweeUEE" target="blank">Tratamiento de datos</a>
-        </p>
-        <p class="mb-1">
-          <a href="./assets/docs/PoliticaSST.pdf" target="blank">SST</a>
-        </p>
-        <p class="mb-1">
-          <a href="./assets/docs/PoliticaSeguridadVial.pdf" target="blank">Seguridad vial</a>
-        </p>
-        <p class="mb-1">
-          <a href="./assets/docs/PolíticaAlcoholTabacoySustancias.pdf" target="blank">Tabaco, alcohol y sustancias</a>
-        </p>
-      </div>
-      <div class="col-sm-2 col-md-3 d-flex flex-sm-column justify-content-between justify-content-sm-start mb-3 mb-sm-0">
-        <div class="mt-0 ml-4 ml-sm-0">
-          <h5 class="text-dark">Síguenos</h5>
-          <div class="mt-3 mt-sm-0">
-            <p class="d-inline-block">
-              <a href="https://api.whatsapp.com/send?phone=+573208580511&text=" target="blank">
-                <i class="fab fa-whatsapp fa-2x"></i>
-              </a>
-            </p>
-            <p class="d-inline-block">
-              <a href="https://www.facebook.com/Asovolcamt-1125839237546965" target="blank">
-                <i class="fab fa-facebook-f fa-2x"></i>
-              </a>
-            </p>
+
+      <div class="row px-md-4">
+        <div class="col-sm-4 col-md-4 mb-2 mb-sm-0">
+          <address>
+            <h5 class="text-dark">Nuestra Sede</h5>
+            <h6 class="text-body">Puerto Boyacá, Boyacá</h6>
+            <p class="mb-1"><i class="fas fa-map-marker-alt fa-fw mr-1"></i> Carrera 5a # 28 - 65</p>
+            <p class="mb-1"><i class="fas fa-map-marked-alt fa-fw mr-1"></i> Barrio La Paz</p>
+            <p class="mb-1"><i class="fas fa-phone fa-flip-horizontal fa-fw mr-1"></i> (8) 738 1390</p>
+            <p class="mb-1"><i class="fas fa-mobile-alt fa-fw mr-1"></i> (+57) 315 590 2290</p>
+          </address>
+        </div>
+        <div class="col-sm-4 mb-3 col-md-3 mb-sm-0">
+          <h5 class="text-dark">Políticas</h5>
+          <p class="mb-1">
+            <a href="https://drive.google.com/uc?export=view&id=1rL-nHuNYJqHZTVgaEv0s_BOEwsweeUEE" target="blank">Privacidad</a>
+          </p>
+          <p class="mb-1">
+            <a href="https://drive.google.com/uc?export=view&id=1rL-nHuNYJqHZTVgaEv0s_BOEwsweeUEE" target="blank">Tratamiento
+              de datos</a>
+          </p>
+          <p class="mb-1">
+            <a href="./assets/docs/PoliticaSST.pdf" target="blank">SST</a>
+          </p>
+          <p class="mb-1">
+            <a href="./assets/docs/PoliticaSeguridadVial.pdf" target="blank">Seguridad vial</a>
+          </p>
+          <p class="mb-1">
+            <a href="./assets/docs/PolíticaAlcoholTabacoySustancias.pdf" target="blank">Tabaco, alcohol y sustancias</a>
+          </p>
+        </div>
+        <div
+            class="col-sm-2 col-md-3 d-flex flex-sm-column justify-content-between justify-content-sm-start mb-3 mb-sm-0">
+          <div class="mt-0 ml-4 ml-sm-0">
+            <h5 class="text-dark">Síguenos</h5>
+            <div class="mt-3 mt-sm-0">
+              <p class="d-inline-block">
+                <a href="https://api.whatsapp.com/send?phone=+573208580511&text=" target="blank">
+                  <i class="fab fa-whatsapp fa-2x"></i>
+                </a>
+              </p>
+              <p class="d-inline-block">
+                <a href="https://www.facebook.com/Asovolcamt-1125839237546965" target="blank">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <a href="./index.html"><img src="./assets/img/logo_asovolcamt.svg" alt="logo footer" class="img-fluid"></a>
           </div>
         </div>
-        <div>
-          <a href="./index.html"><img src="./assets/img/logo_asovolcamt.png" alt="logo footer" class="img-fluid"></a>
+        <div class="col col-sm-2 col-md-2 mb-3 mb-sm-0 pl-lg-4 text-sm-end">
+          <h5 class="text-dark">Mapa del sitio</h5>
+          <div class="d-flex flex-sm-column flex-wrap justify-content-evenly" id="siteMap">
+            <a class="mb-0 mr-4 ms-sm-auto" href="./index.html">Inicio</a>
+            <a class="mb-0 mr-4 ms-sm-auto" href="./services.html">Servicios</a>
+            <a class="mb-0 mr-4 ms-sm-auto" href="#">Nosotros</a>
+            <a class="mb-0 mr-4 ms-sm-auto" href="./contact.html">Contacto</a>
+          </div>
         </div>
       </div>
-      <div class="col col-sm-2 col-md-2 mb-3 mb-sm-0 pl-lg-4 text-sm-end">
-        <h5 class="text-dark">Mapa del sitio</h5>
-        <div class="d-flex flex-sm-column flex-wrap justify-content-evenly" id="siteMap">
-          <a class="mb-0 mr-4 ms-sm-auto" href="./index.html">Inicio</a>
-          <a class="mb-0 mr-4 ms-sm-auto" href="./services.html">Servicios</a>
-          <a class="mb-0 mr-4 ms-sm-auto" href="#">Nosotros</a>
-          <a class="mb-0 mr-4 ms-sm-auto" href="./contact.html">Contacto</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- GoUp Button -->
-  <a class="goTop" title="Volver arriba">
+    </footer>
+    <!-- GoUp Button -->
+    <a class="goTop" title="Volver arriba">
       <span class="fa-stack">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fas fa-chevron-up fa-stack-1x fa-inverse"></i>
       </span>
-  </a>
-</body>
+    </a>
+  </body>
 </html>

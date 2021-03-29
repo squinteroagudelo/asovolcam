@@ -40,7 +40,6 @@ $(window).ready(function () {
 
 function homeLoad() {
     if (!sessionStorage.hasOwnProperty('home')) {
-        console.log('no está')
         Swal.fire({
             position: 'top-center',
             title: 'Bienvenido',
@@ -63,6 +62,41 @@ function aboutLoad() {
 }
 
 function contactLoad(){
+    let forms = document.getElementsByTagName('form');
+    for (let form of forms) {form.addEventListener('submit', (e) => {e.preventDefault()});}
+    let sendEmail = document.getElementById('sendEmail');
+    let validate = false;
+    sendEmail.addEventListener('click', () => {
+        for (let form of forms) {
+            let inputs = form.querySelectorAll('input[type="text"]');
+            inputs.forEach(input => {
+                if (!input.value){
+                    validate = false;
+                    return false;
+                }else validate = true;
+            });
+        }
+
+        if (validate){
+            Swal.fire({
+                position: 'top',
+                icon: 'success',
+                title: 'Mensaje enviado',
+                html: '<p class="fw-bold m-0">Gracias por escribirnos!</p><p>Pronto nos pondremos en contacto contigo.</p>',
+                showConfirmButton: false,
+                timer: 3000
+            });
+        }else{
+            Swal.fire({
+                position: 'top',
+                icon: 'error',
+                title: 'Por favor, ingresa todos los datos.',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+        for (let form of forms) {form.reset();}
+    })
 }
 
 function goTop(){
