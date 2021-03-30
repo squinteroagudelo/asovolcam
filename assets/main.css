@@ -14,6 +14,10 @@ body {
     max-height: 170px;
 }
 
+.people{
+    background: var(--primary-color);
+}
+
 a, #companyPolicy button {
     color: #084298;
     text-decoration: none;
@@ -72,7 +76,7 @@ a:hover, #companyPolicy button:hover {
     color: #0000001a;
 }
 
-article p{
+article p, .card p{
     text-align: justify;
 }
 
