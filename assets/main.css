@@ -7,6 +7,11 @@
 
 body {
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#vehicles .card, .card img{
+    max-height: 170px;
 }
 
 a, #companyPolicy button {
@@ -147,19 +152,11 @@ footer img{
     max-width: 240px !important;
 }
 
-.fa-facebook-f {
+.socialNetwork {
     color: #03359e;
 }
 
-.fa-whatsapp {
-    color: #1bd03f;
-}
-
-.fa-facebook-f:hover {
-    color: var(--primary-color);
-}
-
-.fa-whatsapp:hover {
+.socialNetwork:hover {
     color: var(--primary-color);
 }
 

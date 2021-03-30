@@ -53,7 +53,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" href="./index.html">Inicio</a>
-              <a class="nav-link" href="./services.html">Servicios</a>
+<!--              <a class="nav-link" href="./services.html">Servicios</a>-->
               <a class="nav-link" href="./about.html">Nosotros</a>
               <a class="nav-link active" aria-current="page" href="#">Contacto</a>
             </div>
@@ -84,24 +84,28 @@
         </article>
         <article class="col-12 col-md-6 mt-4 mt-md-0">
           <div class="ps-md-4 px-3 px-md-0" id="mailUs">
-            <h3>Escríbenos</h3>
-            <p class="fw-bold">¡Gracias por visitarnos!</p>
-            <p>Si tienes dudas o recomendaciones completa los siguientes campos y nos pondremos en contacto contigo.</p>
+            <h3 class="m-0">Escríbenos</h3>
+            <p class="fw-bold m-0">¡Gracias por visitarnos!</p>
+            <p class="m-0">Si tienes dudas o recomendaciones completa los siguientes campos y nos pondremos en contacto contigo.</p>
             <form>
               <div class="form-group">
-                <label for="nameSender">Nombre completo</label>
-                <input type="text" class="form-control" id="nameSender" name="nameSender" autofocus/>
+                <label for="nameSender"></label>
+                <input type="text" class="form-control" id="nameSender" name="nameSender" placeholder="Nombre completo"/>
               </div>
-              <div class="form-group mt-2">
-                <label for="subject">Asunto</label>
-                <input type="text" class="form-control" id="subject" name="subject" />
+              <div class="form-group">
+                <label for="emailSender"></label>
+                <input type="text" class="form-control" id="emailSender" name="emailSender" placeholder="Correo electrónico"/>
               </div>
-              <div class="form-group mt-2">
-                <label for="message">Mensaje</label>
-                <textarea class="form-control" id="message" name="message" rows="3" aria-describedby="msjHelp"></textarea>
+              <div class="form-group">
+                <label for="subject"></label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto"/>
+              </div>
+              <div class="form-group">
+                <label for="message"></label>
+                <textarea class="form-control" id="message" name="message" rows="3" aria-describedby="msjHelp" placeholder="Escribe tu mensaje"></textarea>
                 <small id="msjHelp" class="form-text text-muted">Escribe tus inquietudes o comentarios.</small>
               </div>
-              <div class="form-group form-check mt-2">
+              <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" name="tyc" id="tyc" />
                 <label class="form-check-label text-justify ml-3" for="tyc">Autorizo el tratamiento y comprobación de
                   los datos ingresados en el presente formulario.
@@ -164,12 +168,12 @@
             <div class="mt-3 mt-sm-0">
               <p class="d-inline-block">
                 <a href="https://api.whatsapp.com/send?phone=+573208580511&text=" target="blank">
-                  <i class="fab fa-whatsapp fa-2x"></i>
+                  <i class="fab fa-whatsapp fa-2x fw-bold socialNetwork"></i>
                 </a>
               </p>
               <p class="d-inline-block">
                 <a href="https://www.facebook.com/Asovolcamt-1125839237546965" target="blank">
-                  <i class="fab fa-facebook-f fa-2x"></i>
+                  <i class="fab fa-facebook-f fa-2x socialNetwork"></i>
                 </a>
               </p>
             </div>
@@ -182,7 +186,7 @@
           <h5 class="text-dark">Mapa del sitio</h5>
           <div class="d-flex flex-sm-column flex-wrap justify-content-evenly" id="siteMap">
             <a class="mb-0 mr-4 ms-sm-auto" href="./index.html">Inicio</a>
-            <a class="mb-0 mr-4 ms-sm-auto" href="./services.html">Servicios</a>
+<!--            <a class="mb-0 mr-4 ms-sm-auto" href="./services.html">Servicios</a>-->
             <a class="mb-0 mr-4 ms-sm-auto" href="./about.html">Nosotros</a>
             <a class="mb-0 mr-4 ms-sm-auto" href="#">Contacto</a>
           </div>

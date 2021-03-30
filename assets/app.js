@@ -50,52 +50,33 @@ function homeLoad() {
         });
         sessionStorage.setItem('home', '1');
     }
-    document.getElementById('today').innerHTML = date.toDateString();
 }
-
-function servicesLoad() {
-
-}
-
-function aboutLoad() {
-
-}
-
+function servicesLoad() {}
+function aboutLoad() {}
 function contactLoad(){
-    let forms = document.getElementsByTagName('form');
-    for (let form of forms) {form.addEventListener('submit', (e) => {e.preventDefault()});}
+    let form = document.getElementsByTagName('form')[0];
+    form.addEventListener('submit', (e) => {e.preventDefault()});
     let sendEmail = document.getElementById('sendEmail');
-    let validate = false;
     sendEmail.addEventListener('click', () => {
-        for (let form of forms) {
-            let inputs = form.querySelectorAll('input[type="text"]');
-            inputs.forEach(input => {
-                if (!input.value){
-                    validate = false;
-                    return false;
-                }else validate = true;
-            });
-        }
-
-        if (validate){
+        if (form.nameSender.value && form.emailSender.value && form.subject.value && form.message.value && form.tyc.checked){
             Swal.fire({
-                position: 'top',
+                position: 'top-center',
                 icon: 'success',
                 title: 'Mensaje enviado',
                 html: '<p class="fw-bold m-0">Gracias por escribirnos!</p><p>Pronto nos pondremos en contacto contigo.</p>',
                 showConfirmButton: false,
                 timer: 3000
             });
+            form.reset();
         }else{
             Swal.fire({
-                position: 'top',
+                position: 'top-center',
                 icon: 'error',
                 title: 'Por favor, ingresa todos los datos.',
                 showConfirmButton: false,
                 timer: 1500
-            })
+            });
         }
-        for (let form of forms) {form.reset();}
     })
 }
 
